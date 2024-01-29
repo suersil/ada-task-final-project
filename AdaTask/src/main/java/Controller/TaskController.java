@@ -1,33 +1,43 @@
 package AdaTask.src.main.java.Controller;
 
 import java.util.Scanner;
+import domain.*;
+import service.TaskService;
+import java.util.List;
 
 public class Menu {
-    public boolean escolher(int escolha) {
 
-        switch(escolha) {
+
+    public boolean escolherItemMenu(int choice) {
+
+        switch(choice) {
             case 1:
+                createTask();
                 System.out.println("\nAdding a New Task: ");
                 return true;
 
 
             case 2:
+                editTask();
                 System.out.println("\nEditing a Task: ");
                 return true;
 
 
             case 3:
+                deleteTask();
                 System.out.println("\nShowing Task List: ");
                 return true;
 
 
             case 4:
+                viewAllTasks();
                 System.out.println("\nDeleting a Task: ");
                 return true;
 
 
                 case 5:
                     System.out.println("\nChoose an Option: ");
+                    System.exit(0);
                     return false;
 
 
@@ -38,7 +48,7 @@ public class Menu {
 
 
     }
-    public int mostrarMenu() {
+    public int showMenu() {
 
         int opcao = 0;
 
