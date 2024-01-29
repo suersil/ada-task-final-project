@@ -1,6 +1,11 @@
-# ada-task-final-project
+## ada-task-final-project
+# Descrição Geral
+AdaTask é um aplicativo de console para gerenciamento de tarefas. 
+Ele permite aos usuários criar, editar, deletar e visualizar tarefas pessoais e profissionais. A simulação de um banco de dados será realizada através de listas em memória.
 
-# MAIN:
+# ESTRUTURA 
+
+# Main:
 Instancia TaskRepository, TaskService, e TaskController.
 Inicia o loop principal chamando taskController.startMenu().
 
