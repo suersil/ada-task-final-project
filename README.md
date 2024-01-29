@@ -11,11 +11,11 @@ O loop continua até que o usuário escolha sair (opção 0).
 
 # Controller
 ## TaskController:
-- Gerencia a interação do usuário
-Cria Tarefas (createTask): Solicita informações ao usuário, cria uma nova tarefa e a adiciona via TaskService.
-Edita Tarefas (editTask): Lista todas as tarefas, permite ao usuário escolher uma, coleta novas informações e chama TaskService para editar.
-Deleta Tarefas (deleteTask): Lista todas as tarefas, permite ao usuário escolher uma, e chama TaskService para excluir.
-Visualiza Todas as Tarefas (viewAllTasks): Chama TaskService para obter todas as tarefas e as exibe no console.
+Gerencia a interação do usuário:
+- Cria Tarefas (createTask): Solicita informações ao usuário, cria uma nova tarefa e a adiciona via TaskService.
+- Edita Tarefas (editTask): Lista todas as tarefas, permite ao usuário escolher uma, coleta novas informações e chama TaskService para editar.
+- Deleta Tarefas (deleteTask): Lista todas as tarefas, permite ao usuário escolher uma, e chama TaskService para excluir.
+- Visualiza Todas as Tarefas (viewAllTasks): Chama TaskService para obter todas as tarefas e as exibe no console.
 
 # Service
 ## TaskService:
