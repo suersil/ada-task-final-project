@@ -2,7 +2,7 @@ package Controller;
 
 import Domain.BaseTask;
 import Domain.PersonalTask;
-import Domain.StudyTask;
+import Domain.WorkTask;
 import Service.TaskService;
 
 import java.util.List;
@@ -88,7 +88,7 @@ public class TaskController {
                 newTask = new PersonalTask(title, description, deadline);
                 break;
             case 2:
-                newTask = new StudyTask(title, description, deadline);
+                newTask = new WorkTask(title, description, deadline);
                 break;
             default:
                 System.out.println("Invalid task type.");

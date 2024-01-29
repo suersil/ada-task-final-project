@@ -11,6 +11,7 @@ public class Main {
         TaskRepository<BaseTask> taskRepository = new TaskRepository();
         TaskService<BaseTask> taskService = new TaskService(taskRepository);
         TaskController taskController = new TaskController(taskService);
+
         taskController.startMenu();
 
     }
